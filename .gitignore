@@ -1,0 +1,8 @@
+.DS_Store
+*.tmp
+~ai-*
+.wrangler/
+# 制作元データ（公開不要・サイズ大）
+*.ai
+*.psd
+ラフ案-*.png
