@@ -1579,19 +1579,42 @@ dd {
   color: var(--blue-deep);
 }
 
-.agency-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+/* PPPメイン画像：CRYSTAL PROJECT 採用のスライドショー（CSSのみ・3枚を18s周期でフェード） */
+.agency-slideshow {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 390 / 240;
   margin: 22px auto 0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(70, 86, 151, 0.16);
 }
 
-.agency-photos img {
+.ppp-slideshow img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  height: 100%;
   object-fit: cover;
-  border-radius: 14px;
-  box-shadow: 0 10px 24px rgba(70, 86, 151, 0.16);
+  opacity: 0;
+  animation: ppp-slide 18s infinite;
+}
+
+.ppp-slideshow img:nth-child(1) { animation-delay: 0s; }
+.ppp-slideshow img:nth-child(2) { animation-delay: -12s; }
+.ppp-slideshow img:nth-child(3) { animation-delay: -6s; }
+
+@keyframes ppp-slide {
+  0%, 27.78% { opacity: 1; }
+  33.33%, 94.44% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ppp-slideshow img {
+    animation: none;
+  }
+  .ppp-slideshow img:nth-child(1) { opacity: 1; }
 }
 
 .agency-points {
