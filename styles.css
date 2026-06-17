@@ -1813,7 +1813,6 @@ dd {
 .schedule-label {
   display: grid;
   place-items: center;
-  min-height: 44px;
   padding: 6px 10px;
   border-radius: 999px;
   color: #fff;
@@ -1835,10 +1834,7 @@ dd {
 
 .schedule .schedule-sub {
   margin: 0 0 2px;
-  color: transparent;
-  background: linear-gradient(90deg, #7a9cc8, #a169b8);
-  background-clip: text;
-  -webkit-background-clip: text;
+  color: var(--lavender);
   font-size: 16px;
   font-weight: 950;
   line-height: 1.3;
