@@ -1542,8 +1542,14 @@ dd {
 
 /* --- 所属事務所セクション --- */
 .heading-sub-agency {
-  right: 46px;
-  top: 100px;
+  right: 40px;
+  top: 96px;
+  width: 168px;
+}
+
+.index-agency {
+  left: 11px;
+  top: 30px;
   width: 130px;
 }
 
