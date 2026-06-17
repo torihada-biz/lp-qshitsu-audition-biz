@@ -1755,3 +1755,99 @@ dd {
     animation: none;
   }
 }
+
+/* === オーディション日程（Schedule / 07） === */
+.heading-sub-schedule {
+  left: 42px;
+  top: 96px;
+  width: 158px;
+}
+
+.index-schedule {
+  right: 10px;
+  top: 30px;
+  width: 130px;
+}
+
+.schedule h2 {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.schedule-list {
+  list-style: none;
+  margin: 28px auto 0;
+  padding: 0;
+  max-width: 420px;
+}
+
+.schedule-list li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding-bottom: 26px;
+}
+
+.schedule-list li:last-child {
+  padding-bottom: 0;
+}
+
+/* 縦の矢印コネクタ（pill中央の下） */
+.schedule-list li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 48px;
+  bottom: 5px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid #b9c6ec;
+}
+
+.schedule-label {
+  display: grid;
+  place-items: center;
+  min-height: 46px;
+  padding: 6px 8px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  background: linear-gradient(135deg, #7f9fe3, #8aa3e6);
+  box-shadow: 0 6px 14px rgba(70, 86, 151, 0.18);
+}
+
+.schedule-list li:nth-child(even) .schedule-label {
+  background: linear-gradient(135deg, #9d90d8, #a692db);
+}
+
+.schedule-body {
+  align-self: center;
+}
+
+.schedule .schedule-sub {
+  margin: 0 0 2px;
+  color: transparent;
+  background: linear-gradient(90deg, #7a9cc8, #a169b8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 16px;
+  font-weight: 950;
+  line-height: 1.3;
+}
+
+.schedule .schedule-date {
+  margin: 0;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.5;
+}
