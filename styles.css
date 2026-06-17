@@ -1520,6 +1520,15 @@ dd {
   margin: 22px auto 0;
 }
 
+/* メインビジュアル直下のSNS（白地・上下に余白） */
+.hero-sns {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  padding: 20px 0 6px;
+  background: #ffffff;
+}
+
 .official-sns .sns {
   display: inline-flex;
   width: 50px;
