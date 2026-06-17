@@ -1486,7 +1486,7 @@ dd {
    Q執務室 オーディション 追加スタイル（仮組）
    =================================================================== */
 
-/* --- Hero: Q執務室ロゴ＆AUDITIONバッジ --- */
+/* --- Hero: Q執務室ロゴ --- */
 .hero-q-logo {
   position: absolute;
   z-index: 6;
@@ -1494,24 +1494,8 @@ dd {
   top: 5%;
   width: 52%;
   height: auto;
-  filter: drop-shadow(0 10px 16px rgba(81, 84, 158, 0.22));
   user-select: none;
   pointer-events: none;
-}
-
-.hero-audition-badge {
-  position: absolute;
-  z-index: 8;
-  right: 6%;
-  top: 8%;
-  padding: 5px 16px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #f382c8, #a996dc);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 950;
-  letter-spacing: 0.16em;
-  box-shadow: 0 8px 18px rgba(163, 105, 184, 0.3);
 }
 
 /* --- About: Q執務室ロゴ＆リード --- */
@@ -1519,7 +1503,6 @@ dd {
   width: min(82%, 320px);
   height: auto;
   margin: 4px auto 0;
-  filter: drop-shadow(0 8px 14px rgba(81, 84, 158, 0.18));
 }
 
 .about-copy--lead {
@@ -1688,82 +1671,73 @@ dd {
   to { transform: translateX(-50%); }
 }
 
-/* --- 運営・お問い合わせカード --- */
+/* --- 運営（CRYSTAL継承：lp-crystal-project-biz の company-card をそのまま踏襲） --- */
 .company-card {
   position: relative;
   z-index: 2;
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  gap: 12px;
   align-items: center;
-  max-width: 420px;
-  margin: 28px auto 0;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  width: calc(100% + 44px);
+  margin: 28px -22px 0;
+  padding: 14px 18px;
+  color: #000;
+  background: #f2f7ff;
+  box-sizing: border-box;
   text-align: left;
 }
 
 .company-logo {
-  width: 72px;
-  height: 72px;
-  flex: 0 0 auto;
-  border-radius: 16px;
-  object-fit: contain;
-  background: #fff;
+  width: 128px;
+  height: auto;
+  background: none;
+  border-radius: 0;
 }
 
 .company-card .company-info {
-  flex: 1 1 auto;
-  min-width: 0;
-  font-size: 12.5px;
-  line-height: 1.7;
-  color: var(--muted);
+  display: grid;
+  gap: 2px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #000;
   -webkit-text-fill-color: currentColor;
   text-align: left;
 }
 
 .company-card .company-info p {
-  margin: 0 0 2px;
-  margin-top: 0;
-  color: var(--muted);
-  font-size: 12.5px;
-  font-weight: 500;
-  line-height: 1.7;
+  margin: 0;
+  color: #000;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
   text-align: left;
 }
 
-.company-card .company-label {
-  margin: 0 0 4px;
-  color: var(--blue-deep);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-}
-
 .company-card .company-name {
-  margin: 0 0 4px;
-  color: var(--ink);
-  font-size: 15px;
-  font-weight: 900;
+  margin-bottom: 4px !important;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .company-card .company-addr {
-  margin: 0 0 6px;
+  margin-bottom: 4px !important;
+  font-size: 11px;
+  line-height: 1.4;
 }
 
 .company-card .company-info span {
   display: inline-block;
-  min-width: 38px;
-  color: var(--ink);
-  font-weight: 800;
+  width: 36px;
 }
 
 .company-card .company-info a {
-  color: var(--blue);
+  color: #12b7e1;
   text-decoration: underline;
-  text-underline-offset: 2px;
+  word-break: break-all;
 }
 
 @media (prefers-reduced-motion: reduce) {
