@@ -1520,13 +1520,31 @@ dd {
   margin: 22px auto 0;
 }
 
-/* メインビジュアル直下のSNS（白地・上下に余白） */
+/* メインビジュアル内：説明文があった位置にSNSを配置 */
 .hero-sns {
-  position: relative;
-  z-index: 3;
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  top: 76.4%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* ヒーロー直下に移動した説明文（白地・中央） */
+.hero-lead {
   margin: 0 auto;
-  padding: 20px 0 6px;
-  background: #ffffff;
+  padding: 24px 22px 6px;
+  color: #4f4f62;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.hero-lead strong {
+  color: var(--blue-deep);
 }
 
 .official-sns .sns {
