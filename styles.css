@@ -1560,12 +1560,6 @@ dd {
   text-align: center;
 }
 
-.agency-logo {
-  width: min(58%, 220px);
-  height: auto;
-  margin: 18px auto 0;
-}
-
 .agency-lead {
   margin: 16px auto 0;
   text-align: center;
@@ -1617,41 +1611,17 @@ dd {
   .ppp-slideshow img:nth-child(1) { opacity: 1; }
 }
 
-.agency-points {
-  list-style: none;
-  margin: 24px auto 0;
-  padding: 22px 20px;
+/* 所属事務所のテキストは check-list と同じカード体裁に合わせる（✓マーカーは .check-list li::before を継承） */
+.agency .check-list {
+  margin: 22px auto 0;
+  padding: 20px;
   max-width: 420px;
-  background: var(--paper);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(118, 143, 204, 0.18);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-.agency-points li {
-  position: relative;
-  padding-left: 26px;
-  margin: 0 0 12px;
-  color: var(--ink);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.6;
-}
-
-.agency-points li:last-child {
-  margin-bottom: 0;
-}
-
-.agency-points li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 4px;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(135deg, #88a6e8, #f382c8);
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M32 0C36 18.5 45.5 28 64 32C45.5 36 36 45.5 32 64C28 45.5 18.5 36 0 32C18.5 28 28 18.5 32 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='black' d='M32 0C36 18.5 45.5 28 64 32C45.5 36 36 45.5 32 64C28 45.5 18.5 36 0 32C18.5 28 28 18.5 32 0Z'/%3E%3C/svg%3E") center / contain no-repeat;
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 18px 40px rgba(81, 105, 160, 0.11);
+  backdrop-filter: blur(10px);
+  list-style: none;
 }
 
 /* --- 所属クリエイター マーキー --- */
