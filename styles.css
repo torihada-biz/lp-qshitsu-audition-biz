@@ -1813,21 +1813,21 @@ dd {
 .schedule-label {
   display: grid;
   place-items: center;
-  min-height: 46px;
-  padding: 6px 8px;
-  border-radius: 12px;
+  min-height: 44px;
+  padding: 6px 10px;
+  border-radius: 999px;
   color: #fff;
   font-size: 14px;
   font-weight: 900;
   line-height: 1.2;
   text-align: center;
-  background: linear-gradient(135deg, #7f9fe3, #8aa3e6);
-  box-shadow: 0 6px 14px rgba(70, 86, 151, 0.18);
+  background: var(--lavender);
 }
 
-.schedule-list li:nth-child(even) .schedule-label {
-  background: linear-gradient(135deg, #9d90d8, #a692db);
-}
+/* サイトカラーで色分け：応募受付=青／審査=紫／合格発表・キックオフ=ピンク */
+.schedule-label--apply { background: var(--blue); }
+.schedule-label--exam { background: var(--lavender); }
+.schedule-label--result { background: var(--pink); }
 
 .schedule-body {
   align-self: center;
