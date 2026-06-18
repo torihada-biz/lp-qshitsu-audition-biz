@@ -1538,7 +1538,6 @@ dd {
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 8px 18px rgba(70, 86, 151, 0.18);
   transition: transform 0.2s ease;
 }
 
@@ -1583,6 +1582,13 @@ dd {
 
 .agency-lead strong {
   color: var(--blue-deep);
+}
+
+.agency-ppp-logo {
+  display: block;
+  width: min(72%, 280px);
+  height: auto;
+  margin: 14px auto 0;
 }
 
 /* PPPメイン画像：CRYSTAL PROJECT 採用のスライドショー（CSSのみ・3枚を18s周期でフェード） */
@@ -1685,7 +1691,6 @@ dd {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 14px rgba(70, 86, 151, 0.16);
 }
 
 @keyframes creators-scroll {
@@ -1781,6 +1786,10 @@ dd {
   width: 130px;
 }
 
+.schedule {
+  font-weight: 600;
+}
+
 .schedule h2 {
   display: block;
   width: 100%;
@@ -1848,7 +1857,7 @@ dd {
   margin: 0 0 2px;
   color: var(--lavender);
   font-size: 16px;
-  font-weight: 950;
+  font-weight: 600;
   line-height: 1.3;
 }
 
@@ -1856,6 +1865,6 @@ dd {
   margin: 0;
   color: var(--ink);
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 1.5;
 }
