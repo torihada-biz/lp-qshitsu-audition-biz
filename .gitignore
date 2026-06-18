@@ -6,3 +6,6 @@
 *.ai
 *.psd
 ラフ案-*.png
+
+# Chrome DevTools workspace 自動連結（ローカル専用）
+.well-known/

@@ -742,7 +742,7 @@ dd {
 
 .check-list li {
   position: relative;
-  padding: 13px 0 13px 34px;
+  padding: 8px 0 8px 34px;
   color: var(--ink);
   font-size: 14px;
   font-weight: 400;
@@ -1651,6 +1651,11 @@ dd {
   height: 8px;
   border-radius: 50%;
   background: var(--blue);
+}
+
+/* 項目の間に罫線 */
+.agency .check-list li + li {
+  border-top: 1px solid rgba(118, 143, 204, 0.18);
 }
 
 /* --- 所属クリエイター マーキー --- */
