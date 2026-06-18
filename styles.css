@@ -9,7 +9,7 @@
   --line: rgba(101, 117, 170, 0.16);
   --shadow: 0 24px 70px rgba(70, 86, 151, 0.2);
   --radius: 22px;
-  --section-bg: #ffffff;
+  --section-bg: #fefdff;
 }
 
 * {
@@ -77,7 +77,7 @@ dd {
   min-height: 100svh;
   margin: 0 auto;
   overflow: hidden;
-  background: #ffffff;
+  background: #fefdff;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75), var(--shadow);
 }
 
@@ -88,7 +88,7 @@ dd {
   min-height: 760px;
   overflow: hidden;
   isolation: isolate;
-  background: #ffffff;
+  background: #fefdff;
 }
 
 .hero::before {
@@ -251,12 +251,12 @@ dd {
   position: relative;
   padding: 88px 24px 76px;
   background:
-    linear-gradient(180deg, #ffffff 0%, rgba(255, 249, 254, 0.74) 100%);
+    linear-gradient(180deg, #fefdff 0%, rgba(255, 249, 254, 0.74) 100%);
 }
 
 .section:nth-of-type(odd) {
   background:
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 54%, #fff8fd 100%);
+    linear-gradient(180deg, #fefdff 0%, #f8fbff 54%, #fff8fd 100%);
 }
 
 .section::before {
@@ -305,7 +305,7 @@ dd {
 
 .support {
   background:
-    linear-gradient(180deg, #ffffff 0%, #ffffff 52%, #fff8fd 100%);
+    linear-gradient(180deg, #fefdff 0%, #fefdff 52%, #fff8fd 100%);
 }
 
 .target::before {
@@ -597,7 +597,7 @@ dd {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  color: #ffffff;
+  color: #fefdff;
   background: linear-gradient(90deg, #88a6e8, #8299e0);
   font-size: 17px;
   font-weight: 950;
@@ -671,7 +671,7 @@ dd {
   padding: 0 0 12px;
   border-radius: 16px;
   overflow: hidden;
-  background: #ffffff;
+  background: #fefdff;
   box-shadow: none;
 }
 
@@ -759,7 +759,7 @@ dd {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  color: #ffffff;
+  color: #fefdff;
   background: var(--blue);
   font-size: 15px;
   font-weight: 950;
@@ -989,7 +989,7 @@ dd {
   justify-content: center;
   min-height: 58px;
   border-radius: 999px;
-  color: #ffffff;
+  color: #fefdff;
   background: var(--blue);
   box-shadow: 0 18px 34px rgba(60, 99, 185, 0.28);
   font-size: 15px;
@@ -1216,7 +1216,7 @@ dd {
 
   68%,
   78% {
-    border-color: #ffffff;
+    border-color: #fefdff;
     box-shadow:
       0 18px 34px rgba(60, 99, 185, 0.36),
       0 0 28px rgba(255, 255, 255, 0.95),
