@@ -1532,21 +1532,6 @@ dd {
   background: transparent;
 }
 
-/* ヒーロー直下に移動した説明文（白地・中央） */
-.hero-lead {
-  margin: 0 auto;
-  padding: 24px 22px 6px;
-  color: #4f4f62;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.62;
-  text-align: center;
-}
-
-.hero-lead strong {
-  color: var(--blue-deep);
-}
-
 .official-sns .sns {
   display: inline-flex;
   width: 50px;
