@@ -1815,7 +1815,7 @@ dd {
   grid-template-columns: 96px 1fr;
   gap: 16px;
   align-items: center;
-  padding-bottom: 26px;
+  min-height: 64px;
 }
 
 .schedule-list li:last-child {
