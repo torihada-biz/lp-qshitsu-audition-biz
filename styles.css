@@ -1823,11 +1823,17 @@ dd {
 }
 
 /* 縦の矢印コネクタ（pill中央の下） */
-.schedule-list li:not(:last-child)::before {
+/* 三角コネクタ：pillの真下・各段で一定位置（pill間の中間）に */
+.schedule-list li:not(:last-child) .schedule-label {
+  position: relative;
+}
+
+.schedule-list li:not(:last-child) .schedule-label::after {
   content: "";
   position: absolute;
-  left: 48px;
-  bottom: 5px;
+  top: 100%;
+  left: 50%;
+  margin-top: 13px;
   transform: translateX(-50%);
   width: 0;
   height: 0;
