@@ -1,0 +1,10 @@
+.git
+.git/**
+.gitignore
+.assetsignore
+wrangler.jsonc
+CLAUDE.md
+README.md
+node_modules
+preview-*.png
+.DS_Store

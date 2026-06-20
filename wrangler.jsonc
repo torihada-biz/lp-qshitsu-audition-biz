@@ -1,6 +1,9 @@
 {
   // 静的サイト（Workers Assets）。リポジトリ直下を配信し、.git等は .assetsignore で除外
   "name": "lp-qshitsu-audition-biz",
+  // 本番URL: https://qshitsu-au2026.keihan.tech/
+  // デプロイ先アカウント: TORIHADA Inc.（毎回のアカウント選択を排除するため明記）
+  "account_id": "c267aef2bbb5757ef07ecc2009e35b04",
   "compatibility_date": "2026-06-17",
   "assets": {
     "directory": "./"
