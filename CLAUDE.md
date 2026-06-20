@@ -26,4 +26,8 @@
 - SNSハンドル（`@qshitsu_official` 等）・LINE URL・連絡先メールは要確認。
 
 ## デプロイ
-未デプロイ（仮組段階）。本番化時は Cloudflare（`wrangler deploy` もしくは Pages）。
+- **本番URL: https://qshitsu-au2026.keihan.tech/**
+- Cloudflare Workers Assets。プロジェクトルートで `npx wrangler deploy`。
+- デプロイ先アカウントは **TORIHADA Inc.**（`account_id` を `wrangler.jsonc` に明記済みなので選択不要）。
+- `.assetsignore` で `.git` 等を配信対象から除外している（無いと `.git/` が公開される）。
+  デプロイ後 `https://qshitsu-au2026.keihan.tech/.git/config` が 404 を返すことを確認すること。
