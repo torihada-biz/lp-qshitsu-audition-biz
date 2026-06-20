@@ -25,6 +25,14 @@
   現状 PPP STUDIO 系の **ありもの素材で代用**。本番素材が来たら差し替える。
 - SNSハンドル（`@qshitsu_official` 等）・LINE URL・連絡先メールは要確認。
 
+## 恒久的な識別子
+- GitHub: `torihada-biz/lp-qshitsu-audition-biz`（main）
+- 応募導線 LINE: `https://line.me/R/ti/p/@833tzhtb`（CTA・floating-cta・サイドナビ共通）
+- 公式SNS（@qshitsu_official）: [TikTok](https://www.tiktok.com/@qshitsu_official) / [Instagram](https://www.instagram.com/qshitsu_official)
+- TikTok Pixel ID: `D877RQBC77U97AFNPMP0`
+- 所属事務所: PPP STUDIO（https://pppstudio.jp/ ）／運営: TORIHADA
+- ※SNSハンドル・LINE URL・連絡先メール・Xリンクは本番確定待ち（上記は仮）
+
 ## デプロイ
 - **本番URL: https://qshitsu-au2026.keihan.tech/**
 - Cloudflare Workers Assets。プロジェクトルートで `npx wrangler deploy`。
