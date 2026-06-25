@@ -727,7 +727,7 @@ dd {
 
 .mascot-row {
   display: grid;
-  grid-template-columns: 82px 95px 96px 95px;
+  grid-template-columns: 0.85fr repeat(5, 1fr);
   align-items: end;
   justify-content: center;
   gap: 0;
